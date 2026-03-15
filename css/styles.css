@@ -601,50 +601,6 @@ transform:translateY(0);
 }
 
 /* =========================
-GLOBAL SECTION TITLES
-========================= */
-
-.section-title{
-
-font-family:'Bebas Neue', sans-serif;
-
-font-size:3rem;
-
-letter-spacing:4px;
-
-text-align:center;
-
-color:#af5249;
-
-margin-bottom:50px;
-
-position:relative;
-
-}
-
-/* línea luminosa ALGAS */
-
-.section-title::after{
-
-content:"";
-
-display:block;
-
-width:80px;
-
-height:2px;
-
-margin:14px auto 0;
-
-background:#af5249;
-
-box-shadow:
-0 0 6px rgba(175,82,73,0.6),
-0 0 18px rgba(175,82,73,0.35);
-
-}
-
-/* =========================
 SECTION TEXT STYLE
 ========================= */
 
