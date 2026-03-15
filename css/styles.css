@@ -198,20 +198,36 @@ justify-content:center;
 
 .nav-logo img{
 
-height:42px;
+height:64px;
 
 transition:
 transform 0.25s ease,
 filter 0.35s ease;
 
+opacity:0.9;  
+
+filter:
+brightness(0)
+saturate(100%)
+invert(43%)
+sepia(23%)
+saturate(1055%)
+hue-rotate(325deg)
+brightness(90%)
+contrast(95%);  
+
 }
 
 .nav-logo:hover img{
 
-filter:drop-shadow(0 0 4px rgba(175,82,73,0.7))
-drop-shadow(0 0 10px rgba(175,82,73,0.35));
+opacity:1;
+  
+filter:
+drop-shadow(0 0 6px rgba(175,82,73,0.8))
+drop-shadow(0 0 16px rgba(175,82,73,0.45))
+drop-shadow(0 0 28px rgba(175,82,73,0.25));
 
-transform:translateY(-1px);
+transform:translateY(-2px) scale(1.04);
 
 }
 
@@ -258,7 +274,7 @@ justify-content:center;
 
 .nav-logo img{
 
-height:30px;
+height:42px;
 transform:translateY(-2px);
 
 }
