@@ -812,6 +812,19 @@ margin-bottom:60px;
 
 }
 
+@media (max-width:768px){
+
+.gallery-grid{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:14px;
+
+}
+
+}
+
+
 /* =========================
 TRANSICIÓN GALERÍA → DISCOGRAFÍA
 ========================= */
@@ -1558,11 +1571,39 @@ margin:auto;
 
 .bio-photo img{
 
-width:100%;
+width:75%;
+margin:auto;
+display:block;
+border-radius:6px;
 
-border-radius:8px;
+}
 
-box-shadow:0 20px 60px rgba(0,0,0,0.7);
+.bio-photo{
+
+position:relative;
+display:flex;
+justify-content:center;
+
+}
+
+.bio-photo::before{
+
+content:"";
+position:absolute;
+
+width:220px;
+height:220px;
+
+background:radial-gradient(
+circle,
+rgba(175,82,73,0.45) 0%,
+rgba(175,82,73,0.15) 40%,
+transparent 70%
+);
+
+filter:blur(25px);
+
+z-index:-1;
 
 }
 
@@ -1570,16 +1611,18 @@ box-shadow:0 20px 60px rgba(0,0,0,0.7);
 
 .bio-text{
 
-text-align:left;
-
-line-height:1.8;
-
-font-size:1rem;
-
-opacity:0.9;
+max-width:90%;
+margin:auto;
 
 }
 
+.bio-text p{
+
+font-size:0.95rem;
+line-height:1.7;
+letter-spacing:0.4px;
+
+}
 /* mobile */
 
 @media (max-width:768px){
@@ -2101,6 +2144,32 @@ gap:30px;
 
 }
 
+@media (max-width:768px){
+
+.footer-container{
+
+padding:30px 20px;
+
+}
+
+.footer-links{
+
+flex-wrap:wrap;
+justify-content:center;
+gap:14px;
+
+}
+
+footer p{
+
+font-size:0.7rem;
+opacity:0.6;
+margin-top:10px;
+
+}
+
+}
+
 
 /* =========================
 LOGO
@@ -2194,41 +2263,34 @@ BACK TO TOP
 
 .back-to-top{
 
-margin-top:30px;
+margin-top:40px;
+text-align:center;
 
 }
 
 .back-to-top a{
 
-font-family:'Bebas Neue', sans-serif;
+font-size:1.4rem;
+letter-spacing:2px;
 
-font-size:1.8rem;
-
-color:white;
+color:#bbb;
 
 text-decoration:none;
 
-opacity:0.7;
+display:inline-block;
+padding:10px 16px;
 
-transition:
+border:1px solid rgba(255,255,255,0.15);
+border-radius:30px;
 
-opacity 0.3s ease,
-transform 0.3s ease,
-text-shadow 0.3s ease;
+transition:all .3s ease;
 
 }
 
 .back-to-top a:hover{
 
-opacity:1;
-
-transform:translateY(-4px);
-
-text-shadow:
-
-0 0 6px rgba(175,82,73,0.6),
-0 0 16px rgba(175,82,73,0.35),
-0 0 28px rgba(175,82,73,0.25);
+color:white;
+border-color:#af5249;
 
 }
 
@@ -2237,11 +2299,5 @@ text-shadow:
 0%{transform:translateY(0);}
 50%{transform:translateY(-4px);}
 100%{transform:translateY(0);}
-
-}
-
-.back-to-top a{
-
-animation:floatArrow 3s ease-in-out infinite;
 
 }
