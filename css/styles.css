@@ -936,14 +936,12 @@ text-shadow:
 @media (max-width:768px){
 
 .discography-grid{
-
 gap:40px;
-
 }
 
 .album{
-
 width:200px;
+}
 
 }
 
