@@ -1600,8 +1600,6 @@ text-align:center;
 
 }
 
-}
-
 .bio-photo{
 
 position:relative;
@@ -1654,6 +1652,8 @@ z-index:-1;
 
 }
 
+}  
+  
 /* =========================
 PLATFORM GRID
 ========================= */
