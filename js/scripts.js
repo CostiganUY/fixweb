@@ -6,7 +6,10 @@ const nav = document.getElementById("mainNav");
 
 if(nav){
 
-window.addEventListener("scroll", revealSections, { passive:true });
+window.addEventListener("scroll", () => {
+revealSections();
+highlightNav();
+}, { passive:true });
 
 }
 
@@ -33,7 +36,6 @@ section.classList.add("visible");
 
 }
 
-window.addEventListener("scroll", revealSections, { passive:true });
 revealSections();
 
 
@@ -45,8 +47,11 @@ const hero = document.querySelector(".hero-bg");
 
 if(hero){
 
-window.addEventListener("scroll", revealSections, { passive:true });
-
+window.addEventListener("scroll", () => {
+const offset = window.scrollY * 0.3;
+hero.style.transform = `translateY(${offset}px)`;
+});
+  
 }
 
 
