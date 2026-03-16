@@ -2144,33 +2144,6 @@ gap:30px;
 
 }
 
-@media (max-width:768px){
-
-.footer-container{
-
-padding:30px 20px;
-
-}
-
-.footer-links{
-
-flex-wrap:wrap;
-justify-content:center;
-gap:14px;
-
-}
-
-footer p{
-
-font-size:0.7rem;
-opacity:0.6;
-margin-top:10px;
-
-}
-
-}
-
-
 /* =========================
 LOGO
 ========================= */
@@ -2293,6 +2266,37 @@ color:white;
 border-color:#af5249;
 
 }
+
+/* =========================
+FOOTER MOBILE
+========================= */
+
+@media (max-width:768px){
+
+.footer-container{
+
+padding:30px 20px;
+
+}
+
+.footer-links{
+
+flex-wrap:wrap;
+justify-content:center;
+gap:14px;
+
+}
+
+footer p{
+
+font-size:0.7rem;
+opacity:0.6;
+margin-top:10px;
+
+}
+
+}
+
 
 @keyframes floatArrow{
 
