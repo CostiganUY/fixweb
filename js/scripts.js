@@ -166,3 +166,31 @@ lightbox.classList.remove("active");
 }
 
 });
+
+/* =========================
+NAVBAR DINAMICO
+========================= */
+
+let lastScroll = 0;
+const navbar = document.querySelector(".navbar");
+
+window.addEventListener("scroll", () => {
+
+let currentScroll = window.pageYOffset;
+
+if(currentScroll <= 0){
+navbar.style.transform = "translateY(0)";
+return;
+}
+
+if(currentScroll > lastScroll){
+/* bajando */
+navbar.style.transform = "translateY(-100%)";
+}else{
+/* subiendo */
+navbar.style.transform = "translateY(0)";
+}
+
+lastScroll = currentScroll;
+
+});
