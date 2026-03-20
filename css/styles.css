@@ -2355,3 +2355,11 @@ margin-top:10px;
 100%{transform:translateY(0);}
 
 }
+
+/* =========================
+VIDEO FIX
+========================= */
+
+.video-item{
+cursor:pointer;
+}
