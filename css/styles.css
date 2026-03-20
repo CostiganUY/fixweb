@@ -2363,3 +2363,12 @@ VIDEO FIX
 .video-item{
 cursor:pointer;
 }
+
+/* =========================
+FIX GENERAL SECCIONES
+========================= */
+
+section{
+opacity:1 !important;
+transform:none !important;
+}
