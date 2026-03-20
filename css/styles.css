@@ -2518,3 +2518,11 @@ opacity:1;
 }
 
 }
+
+/* =========================
+FIXED POP UP
+========================= */
+
+html, body{
+overflow-x:hidden;
+}
