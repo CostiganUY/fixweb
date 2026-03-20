@@ -230,28 +230,3 @@ threshold:0.2
 sections.forEach(section => {
 observer.observe(section);
 });
-
-/* =========================
-POP UP INGRESO WEB
-========================= */  
-
-const popup = document.getElementById("album-popup");
-const closePopup = document.querySelector(".popup-close");
-
-window.addEventListener("load", () => {
-
-setTimeout(() => {
-popup.classList.add("active");
-}, 800);
-
-});
-
-closePopup.addEventListener("click", () => {
-popup.classList.remove("active");
-});
-
-popup.addEventListener("click", (e) => {
-if(e.target === popup){
-popup.classList.remove("active");
-}
-});
