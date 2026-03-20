@@ -1377,6 +1377,10 @@ transform 0.25s ease;
 
 }
 
+.video-grid{
+gap:30px;
+}
+
 /* animación al hover */
 
 .video-item:hover .video-title{
