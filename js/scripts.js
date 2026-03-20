@@ -172,7 +172,7 @@ NAVBAR DINAMICO
 ========================= */
 
 let lastScroll = 0;
-const navbar = document.querySelector("mainNav");
+const navbar = document.querySelector("#mainNav");
 
 window.addEventListener("scroll", () => {
 
@@ -184,10 +184,8 @@ return;
 }
 
 if(currentScroll > lastScroll){
-/* bajando */
 navbar.style.transform = "translateY(-100%)";
 }else{
-/* subiendo */
 navbar.style.transform = "translateY(0)";
 }
 
