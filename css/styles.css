@@ -1342,6 +1342,15 @@ border-radius:10px;
 
 }
 
+.video-item a{
+display:block;
+position:relative;
+}
+
+.video-item iframe{
+pointer-events:none;
+}
+
 .video-title{
 
 position:absolute;
