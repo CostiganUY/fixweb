@@ -7,15 +7,13 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#ece4cf;
-color:#111;
-}
-
-body{
 margin:0;
 font-family:Inter, sans-serif;
 color:white;
 
+background:#ece4cf;
+color:#111;
+  
 background:radial-gradient(circle at 20% 30%, #141414, #050505);
 background-size:200% 200%;
 animation:backgroundMove 60s ease infinite;
