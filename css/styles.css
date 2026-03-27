@@ -246,19 +246,33 @@ NAVBAR MOBILE GRID
 
 @media (max-width:768px){
 
+.nav-wrapper{
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
 .nav-left,
 .nav-right{
 display:none;
 }
 
 .nav-logo{
-margin:auto;
+
+margin:0 auto;
 display:flex;
 justify-content:center;
+
 }
 
 .nav-logo img{
-max-height:40px; /* evita deformación */
+
+display:block;
+margin:auto;
+max-height:40px;
+
 }
 
 }
