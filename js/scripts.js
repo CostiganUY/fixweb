@@ -200,14 +200,8 @@ VIDEOS FIX
 document.querySelectorAll(".video-item").forEach(video => {
 
 video.addEventListener("click", () => {
-
 window.open(video.dataset.link, "_blank");
-
 });
-
-/* =========================
-SECCION FIX
-========================= */  
 
 });
 
