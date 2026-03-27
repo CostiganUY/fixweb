@@ -20,7 +20,7 @@ padding-top:80px;
 
 body{
 background:#ece4cf;
-color:#111;
+color:#06181c;
 }
 
 /* =========================
@@ -102,8 +102,11 @@ position:fixed;
 top:0;
 width:100%;
 
-background:rgba(0,0,0,0.35);
-backdrop-filter:blur(0px);
+background:rgba(236,228,207,0.85);
+
+backdrop-filter:blur(8px);
+
+border-bottom:1px solid rgba(6,24,28,0.08);
 
 transition:all 0.35s ease;
 
@@ -112,11 +115,11 @@ z-index:1000;
 
 #mainNav.scrolled{
 
-background:rgba(10,10,10,0.75);
+background:rgba(236,228,207,0.95);
 
 backdrop-filter:blur(14px);
 
-box-shadow:0 10px 40px rgba(0,0,0,0.6);
+box-shadow:0 10px 30px rgba(6,24,28,0.15);
 
 border-bottom:1px solid rgba(255,255,255,0.05);
 
@@ -400,6 +403,14 @@ text-align:center;
 max-width:400px;
 }
 
+.hero-text{
+color:#06181c;
+}
+
+.hero-text h1{
+color:#06181c;
+}
+
 .hero h1{
 
 font-family:'Bebas Neue', sans-serif;
@@ -424,6 +435,11 @@ letter-spacing:2px;
 
 opacity:0.9;
 
+}
+
+.hero-sub{
+color:#06181c;
+opacity:0.8;
 }
 
 /* botones */
@@ -538,11 +554,11 @@ box-shadow:0 10px 30px rgba(0,0,0,0.4);
 
 .btn-outline{
 
-border:1px solid white;
+border:1px solid #06181c;
 
 padding:14px 28px;
 
-color:white;
+color:#06181c;
 
 text-decoration:none;
 
@@ -555,8 +571,8 @@ transition:all 0.35s ease;
 
 .btn-outline:hover{
 
-background:white;
-color:black;
+background:#06181c;
+color:#ece4cf;
 
 transform:translateY(-3px);
 
@@ -630,6 +646,10 @@ opacity:0.9;
 
 letter-spacing:0.3px;
 
+}
+
+.section-text{
+color:#06181c;
 }
 
 @media (max-width:768px){
@@ -907,7 +927,7 @@ letter-spacing:2px;
 
 font-size:1.05rem;
 
-color:white;
+color:#06181c;
 
 text-decoration:none;
 
@@ -1760,7 +1780,7 @@ ICON
 width:38px;
 height:38px;
 
-filter:brightness(0) invert(1);
+filter:brightness(0) saturate(100%) invert(8%) sepia(20%) saturate(800%) hue-rotate(150deg);
 
 transition:
 
@@ -1969,9 +1989,9 @@ font-family:'Bebas Neue', sans-serif;
 
 letter-spacing:2px;
 
-color:white;
-
-border:1px solid rgba(255,255,255,0.2);
+color:#06181c;
+  
+border:1px solid rgba(6,24,28,0.2);
 
 padding:8px 16px;
 
@@ -2211,7 +2231,7 @@ margin-bottom:6px;
 
 text-decoration:none;
 
-color:white;
+color:#06181c;
 
 letter-spacing:1px;
 
