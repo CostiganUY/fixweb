@@ -274,7 +274,7 @@ justify-content:center;
 
 display:block;
 margin:auto;
-max-height:30px;
+max-height:35px;
 
 }
 
@@ -311,9 +311,9 @@ background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
 
-filter:brightness(0.45);
+filter:brightness(0.65);
 
-animation:heroZoom 25s ease-in-out infinite alternate;
+animation:heroZoom 15s ease-in-out infinite alternate;
 
 z-index:0;
 
@@ -366,7 +366,7 @@ z-index:1;
 .hero-container{
 
 display:flex;
-flex-direction:row-reverse; /* 🔥 esto invierte */
+flex-direction:row-reverse;
 align-items:center;
 justify-content:center;
 
@@ -384,7 +384,7 @@ border-radius:6px;
 
 box-shadow:0 30px 80px rgba(0,0,0,0.7);
 
-animation:floatAlbum 7s ease-in-out infinite;
+animation:floatAlbum 5s ease-in-out infinite;
 
 }
 
@@ -404,11 +404,11 @@ max-width:400px;
 }
 
 .hero-text{
-color:#06181c;
+color:#ece4cf;
 }
 
 .hero-text h1{
-color:#06181c;
+color:#ece4cf;
 }
 
 .hero h1{
@@ -513,7 +513,7 @@ BUTTONS
 
 .btn{
 background:#af5249;
-color:white;
+color:#ece4cf;
 
 padding:14px 28px;
 
@@ -554,11 +554,11 @@ box-shadow:0 10px 30px rgba(0,0,0,0.4);
 
 .btn-outline{
 
-border:1px solid #06181c;
+border:1px solid #ece4cf;
 
 padding:14px 28px;
 
-color:#06181c;
+color:#ece4cf;
 
 text-decoration:none;
 
@@ -609,20 +609,9 @@ max-width:1200px;
 
 margin:auto;
 
-opacity:0;
-transform:translateY(60px);
-
 transition:
 opacity 1s ease,
 transform 1s ease;
-
-}
-
-section.visible{
-
-opacity:1;
-
-transform:translateY(0);
 
 }
 
@@ -1181,7 +1170,7 @@ padding:60px;
 
 text-align:center;
 
-background:black;
+background:#ece4cf;
 
 }
 
