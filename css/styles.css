@@ -9,7 +9,7 @@ scroll-behavior:smooth;
 body{
 margin:0;
 font-family:Inter, sans-serif;
-color:white;
+color:#ece4cf;
 
 background:radial-gradient(circle at 20% 30%, #141414, #050505);
 background-size:200% 200%;
@@ -1127,7 +1127,7 @@ text-decoration:none;
 width:34px;
 height:34px;
 
-fill:white;
+fill:#ece4cf;
 
 transition:
 
@@ -1379,7 +1379,7 @@ font-size:0.9rem;
 
 letter-spacing:2px;
 
-color:white;
+color:#ece4cf;
 
 opacity:0.9;
 
@@ -1443,7 +1443,7 @@ font-size:0.9rem;
 
 letter-spacing:2px;
 
-color:white;
+color:#ece4cf;
 
 opacity:0.9;
 
@@ -1809,7 +1809,7 @@ font-size:0.9rem;
 
 letter-spacing:2px;
 
-color:white;
+color:#ece4cf;
 
 opacity:0;
 
@@ -2118,7 +2118,7 @@ font-size:28px;
 
 cursor:pointer;
 
-color:white;
+color:#ece4cf;
 
 opacity:0.7;
 
@@ -2330,7 +2330,7 @@ transition:all .3s ease;
 
 .back-to-top a:hover{
 
-color:white;
+color:#ece4cf;
 border-color:#af5249;
 
 }
