@@ -1362,10 +1362,6 @@ display:block;
 position:relative;
 }
 
-.video-item iframe{
-pointer-events:none;
-}
-
 .video-title{
 
 position:absolute;
@@ -2373,7 +2369,15 @@ VIDEO FIX
 ========================= */
 
 .video-item{
-cursor:pointer;
+  cursor:pointer;
+  position:relative;
+  z-index:2;
+}
+
+.video-item iframe{
+  pointer-events:none;
+  position:relative;
+  z-index:1;
 }
 
 @media (max-width:768px){
