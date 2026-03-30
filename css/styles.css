@@ -2472,9 +2472,17 @@ FIX HERO LISTEN
 
 @media (max-width:768px){
 
+.hero{
+height:auto;
+min-height:100vh;
+padding-bottom:40px;
+}
+
 .listen{
-margin-top:-20px;
-padding-top:60px;
+margin-top:0 !important;
+padding-top:40px;
+position:relative;
+z-index:2;
 }
 
 }
