@@ -640,6 +640,8 @@ SECTION TEXT STYLE
 
 .section-text{
 
+font-family:'Bebas Neue', sans-serif;  
+
 max-width:720px;
 
 margin:auto;
