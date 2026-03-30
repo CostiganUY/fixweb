@@ -2478,3 +2478,15 @@ padding-top:40px;
 }
 
 }
+
+/* =========================
+FIX PARA LIGHTBOX
+========================= */
+
+#lightbox{
+  z-index:9999;
+}
+
+.gallery-grid img{
+  cursor:pointer;
+}
