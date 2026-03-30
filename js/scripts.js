@@ -218,8 +218,6 @@ window.open(link, "_blank");
 SECCIONES FIX
 ========================= */
 
-const sections = document.querySelectorAll("section");
-
 const observer = new IntersectionObserver(entries => {
 
 entries.forEach(entry => {
@@ -236,6 +234,4 @@ threshold:0.2
 
 sections.forEach(section => {
 observer.observe(section);
-});
-
 });
