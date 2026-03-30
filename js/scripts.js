@@ -200,17 +200,15 @@ VIDEOS FIX
 
 document.querySelectorAll(".video-item").forEach(video => {
 
-video.addEventListener("click", (e) => {
+  video.addEventListener("click", () => {
 
-e.stopPropagation();
+    const link = video.getAttribute("data-link");
 
-const link = video.dataset.link;
+    if(link){
+      window.open(link, "_blank");
+    }
 
-if(link){
-window.open(link, "_blank");
-}
-
-});
+  });
 
 });
 
