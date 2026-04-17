@@ -239,15 +239,15 @@ MINI PLAYER NAVBAR
 ========================= */
 
 const tracks = [
-"assets/audio/algas1.mp3",
-"assets/audio/algas2.mp3",
-"assets/audio/algas3.mp3"
+"assets/audio/Amanda.mp3",
+"assets/audio/Balconeras.mp3",
+"assets/audio/Intrusión.mp3"
 ];
 
 const trackNames = [
-"ALGAS — Track 1",
-"ALGAS — Track 2",
-"ALGAS — Track 3"
+"ALGAS — Amanda",
+"ALGAS — Balconeras",
+"ALGAS — Intrusión"
 ];
 
 let currentTrack = 0;
