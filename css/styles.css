@@ -2546,3 +2546,16 @@ transform:scale(1.1);
 opacity:1;
 
 }
+
+@media (max-width:768px){
+
+.mini-player{
+
+flex-direction:column;
+gap:4px;
+
+font-size:0.7rem;
+
+}
+
+}
