@@ -233,3 +233,44 @@ threshold:0.2
 sections.forEach(section => {
 observer.observe(section);
 });
+
+/* =========================
+REPRODUCTOR
+========================= */
+
+const tracks = [
+"assets/audio/algas1.mp3",
+"assets/audio/algas2.mp3",
+"assets/audio/algas3.mp3"
+];
+
+let currentTrack = 0;
+
+const audio = document.getElementById("audio");
+const playBtn = document.getElementById("playBtn");
+const nextBtn = document.getElementById("nextBtn");
+const prevBtn = document.getElementById("prevBtn");
+
+playBtn.addEventListener("click", () => {
+
+if(audio.paused){
+audio.play();
+playBtn.textContent = "⏸";
+}else{
+audio.pause();
+playBtn.textContent = "▶";
+}
+
+});
+
+nextBtn.addEventListener("click", () => {
+currentTrack = (currentTrack + 1) % tracks.length;
+audio.src = tracks[currentTrack];
+audio.play();
+});
+
+prevBtn.addEventListener("click", () => {
+currentTrack = (currentTrack - 1 + tracks.length) % tracks.length;
+audio.src = tracks[currentTrack];
+audio.play();
+});
