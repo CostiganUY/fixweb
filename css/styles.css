@@ -2501,3 +2501,20 @@ FIX PARA LIGHTBOX
 .gallery-grid img{
   cursor:pointer;
 }
+
+/* =========================
+REPRODUCTOR
+========================= */
+
+.player{
+text-align:center;
+}
+
+.controls button{
+font-size:20px;
+margin:10px;
+cursor:pointer;
+background:none;
+border:1px solid #06181c;
+padding:10px 16px;
+}
