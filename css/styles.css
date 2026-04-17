@@ -200,8 +200,14 @@ transform:translateY(-1px);
 /* LOGO */
 
 .nav-logo{
+
 display:flex;
+flex-direction:column;  
+align-items:center;
 justify-content:center;
+
+gap:6px;
+
 }
 
 .nav-logo img{
@@ -252,8 +258,9 @@ NAVBAR MOBILE GRID
 .nav-wrapper{
 
 display:flex;
-justify-content:center;
+flex-direction:column;   
 align-items:center;
+justify-content:center;
 
 }
 
@@ -265,8 +272,6 @@ display:none;
 .nav-logo{
 
 margin:0 auto;
-display:flex;
-justify-content:center;
 
 }
 
@@ -2512,16 +2517,22 @@ display:flex;
 align-items:center;
 justify-content:center;
 
-gap:10px;
+gap:14px;
 
-margin-top:6px;
+font-family:'Bebas Neue', sans-serif;
+letter-spacing:2px;
 
-font-size:0.75rem;
-letter-spacing:1px;
+font-size:0.7rem;
 
 color:#06181c;
 
-opacity:0.8;
+position:relative;
+
+/* leve fade */
+opacity:0.85;
+
+/* transición suave */
+transition:all 0.3s ease;
 
 }
 
@@ -2536,14 +2547,52 @@ font-size:14px;
 
 color:#06181c;
 
-transition:transform 0.2s ease, opacity 0.2s ease;
+opacity:0.7;
+
+transition:
+transform 0.2s ease,
+opacity 0.2s ease,
+text-shadow 0.3s ease;
 
 }
 
 .mini-player button:hover{
 
-transform:scale(1.1);
 opacity:1;
+
+transform:scale(1.15);
+
+text-shadow:
+0 0 6px rgba(175,82,73,0.6),
+0 0 14px rgba(175,82,73,0.3);
+
+}
+
+.mini-player::before{
+
+content:"";
+
+position:absolute;
+
+inset:-6px;
+
+background:radial-gradient(
+circle,
+rgba(175,82,73,0.25),
+transparent 70%
+);
+
+filter:blur(10px);
+
+z-index:-1;
+
+opacity:0.6;
+
+}
+
+#mini-title{
+
+opacity:0.8;
 
 }
 
@@ -2551,10 +2600,7 @@ opacity:1;
 
 .mini-player{
 
-flex-direction:column;
-gap:4px;
-
-font-size:0.7rem;
+margin-top:4px;
 
 }
 
