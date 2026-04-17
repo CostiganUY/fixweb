@@ -235,7 +235,7 @@ observer.observe(section);
 });
 
 /* =========================
-REPRODUCTOR
+MINI PLAYER NAVBAR
 ========================= */
 
 const tracks = [
@@ -244,13 +244,30 @@ const tracks = [
 "assets/audio/algas3.mp3"
 ];
 
+const trackNames = [
+"ALGAS — Track 1",
+"ALGAS — Track 2",
+"ALGAS — Track 3"
+];
+
 let currentTrack = 0;
 
-const audio = document.getElementById("audio");
-const playBtn = document.getElementById("playBtn");
-const nextBtn = document.getElementById("nextBtn");
-const prevBtn = document.getElementById("prevBtn");
+const audio = document.getElementById("mini-audio");
+const playBtn = document.getElementById("mini-play");
+const nextBtn = document.getElementById("mini-next");
+const title = document.getElementById("mini-title");
 
+if(audio){
+
+audio.src = tracks[currentTrack];
+title.textContent = trackNames[currentTrack];
+
+// intento autoplay (puede fallar)
+audio.play().catch(() => {
+console.log("Autoplay bloqueado");
+});
+
+// play / pause
 playBtn.addEventListener("click", () => {
 
 if(audio.paused){
@@ -263,12 +280,20 @@ playBtn.textContent = "▶";
 
 });
 
+// siguiente track
 nextBtn.addEventListener("click", () => {
+
 currentTrack = (currentTrack + 1) % tracks.length;
+
 audio.src = tracks[currentTrack];
+title.textContent = trackNames[currentTrack];
+
 audio.play();
+playBtn.textContent = "⏸";
+
 });
 
+}
 prevBtn.addEventListener("click", () => {
 currentTrack = (currentTrack - 1 + tracks.length) % tracks.length;
 audio.src = tracks[currentTrack];
