@@ -2506,15 +2506,43 @@ FIX PARA LIGHTBOX
 REPRODUCTOR
 ========================= */
 
-.player{
-text-align:center;
+.mini-player{
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+gap:10px;
+
+margin-top:6px;
+
+font-size:0.75rem;
+letter-spacing:1px;
+
+color:#06181c;
+
+opacity:0.8;
+
 }
 
-.controls button{
-font-size:20px;
-margin:10px;
-cursor:pointer;
+.mini-player button{
+
 background:none;
-border:1px solid #06181c;
-padding:10px 16px;
+border:none;
+
+cursor:pointer;
+
+font-size:14px;
+
+color:#06181c;
+
+transition:transform 0.2s ease, opacity 0.2s ease;
+
+}
+
+.mini-player button:hover{
+
+transform:scale(1.1);
+opacity:1;
+
 }
