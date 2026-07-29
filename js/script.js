@@ -294,11 +294,6 @@ playBtn.textContent = "⏸";
 });
 
 }
-prevBtn.addEventListener("click", () => {
-currentTrack = (currentTrack - 1 + tracks.length) % tracks.length;
-audio.src = tracks[currentTrack];
-audio.play();
-});
 
 /* ==========================
 SHOW POPUP
@@ -307,11 +302,29 @@ SHOW POPUP
 const modal = document.getElementById("showModal");
 const closeModal = document.querySelector(".show-close");
 
-window.addEventListener("load", () => {
+if(modal){
 
+window.addEventListener("load", () => {
     modal.classList.add("active");
+});
+
+if(closeModal){
+
+closeModal.addEventListener("click", () => {
+    modal.classList.remove("active");
+});
+
+}
+
+modal.addEventListener("click", (e) => {
+
+    if(e.target === modal){
+        modal.classList.remove("active");
+    }
 
 });
+
+}
 
 closeModal.addEventListener("click", () => {
 
