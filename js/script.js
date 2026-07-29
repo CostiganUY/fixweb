@@ -299,3 +299,32 @@ currentTrack = (currentTrack - 1 + tracks.length) % tracks.length;
 audio.src = tracks[currentTrack];
 audio.play();
 });
+
+/* ==========================
+SHOW POPUP
+========================== */
+
+const modal = document.getElementById("showModal");
+const closeModal = document.querySelector(".show-close");
+
+window.addEventListener("load", () => {
+
+    modal.classList.add("active");
+
+});
+
+closeModal.addEventListener("click", () => {
+
+    modal.classList.remove("active");
+
+});
+
+modal.addEventListener("click", (e)=>{
+
+    if(e.target === modal){
+
+        modal.classList.remove("active");
+
+    }
+
+});
