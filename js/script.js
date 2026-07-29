@@ -304,40 +304,24 @@ const closeModal = document.querySelector(".show-close");
 
 if(modal){
 
-window.addEventListener("load", () => {
-    modal.classList.add("active");
-});
+    window.addEventListener("load", () => {
+        modal.classList.add("active");
+    });
 
-if(closeModal){
+    if(closeModal){
 
-closeModal.addEventListener("click", () => {
-    modal.classList.remove("active");
-});
-
-}
-
-modal.addEventListener("click", (e) => {
-
-    if(e.target === modal){
-        modal.classList.remove("active");
-    }
-
-});
-
-}
-
-closeModal.addEventListener("click", () => {
-
-    modal.classList.remove("active");
-
-});
-
-modal.addEventListener("click", (e)=>{
-
-    if(e.target === modal){
-
-        modal.classList.remove("active");
+        closeModal.addEventListener("click", () => {
+            modal.classList.remove("active");
+        });
 
     }
 
-});
+    modal.addEventListener("click", (e) => {
+
+        if(e.target === modal){
+            modal.classList.remove("active");
+        }
+
+    });
+
+}
